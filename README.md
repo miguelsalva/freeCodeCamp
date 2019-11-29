@@ -9,4 +9,4 @@ partnered with other nonprofits to build web applications, giving the students p
 
 * [freecodeCamp website](https://www.freecodecamp.org)
 * [Wikipedia for freeCodeCamp](https://en.wikipedia.org/wiki/FreeCodeCamp)
-* [freeCodeCamp CodeRadio: 24/7 music designed for coding](https://coderadio.freecodecamp.org)
+* [freeCodeCamp CodeRadio](https://coderadio.freecodecamp.org): 24/7 music designed for coding
