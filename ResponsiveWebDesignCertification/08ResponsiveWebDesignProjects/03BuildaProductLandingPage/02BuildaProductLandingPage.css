@@ -1,0 +1,29 @@
+p {
+    font-size: 20px;
+  }
+ @media (max-height: 800px) {
+   p {
+     font-size: 10px;
+   }
+}
+
+nav-link {
+  
+}
+
+ #box-container {
+    background: gray;
+    display: flex;
+    height: 50px;
+    align-items: center;
+  }
+  #box-1 {
+    background-color: dodgerblue;
+    width: 30px;
+    font-size: 24px;
+  }
+  #box-2 {
+    background-color: orangered;
+    width: 40px;
+    font-size: 18px;
+  }
