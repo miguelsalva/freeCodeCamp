@@ -1,0 +1,51 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<!-- Hello Camper!
+For now, the test suite only works in Chrome! Please read the README below in the JS Editor before beginning. Feel free to delete this message once you have read it. Good luck and Happy Coding! 
+- The freeCodeCamp Team -->
+<html>
+  <body>
+    <main id="main-doc">
+      <h1>Apache HTTP Server: Getting started</h1>
+       <nav id="navbar">
+         <header> nav bar links </header>
+         <a href="#Clients_and_Servers_and_URLs" class="nav-link">Clients and Servers and URLs</a>
+         <a href="#Hostnames_and_DNS" class="nav-link">Hostnames and DNS</a>
+         <a href="#Configuration_Files_and_Directives" class="nav-link">Configuration Files and Directives</a>
+         <a href="#Web_Site_Content" class="nav-link">Web Site Content</a>
+         <a href="#Log_Files_and_Troubleshooting" class="nav-link">Log Files and Troubleshooting</a>
+      </nav></br></br></br>
+      <section class="main-section" id="Clients_and_Servers_and_URLs"> <header>Clients and Servers and URLs</header>
+        <p>Addresses on the Web are expressed with URLs - <code>Uniform Resource Locators</code> - which specify a protocol (e.g. http), a servername (e.g. www.apache.org), a URL-path (e.g. <code>/docs/current/getting-started.html</code>), and possibly a query string (e.g. ?arg=value) used to pass additional arguments to the server.</p>
+        <p>A client (e.g., a web browser) connects to a server (e.g., your Apache HTTP Server), with the specified protocol, and makes a request for a resource using the URL-path:
+        <ul>
+          <li>Apache</li>
+          <li>Web</li>
+          <li>Server</li>
+          <li>URL</li>
+          <li>Path</li>
+        </ul>
+          </p>
+      </section></br>
+    
+  <section class="main-section" id="Hostnames_and_DNS"><header>Hostnames and DNS</header>
+    <p>In order to connect to a server, the client will first have to resolve the servername to an IP address - the location on the Internet where the server resides. Thus, in order for your web server to be reachable, it is necessary that the servername be in DNS.</p>
+    <p>If you don't know how to do this, you'll need to contact your network administrator, or Internet service provider, to perform this step for you.</p>
+    </section></br>
+  
+<section class="main-section" id="Configuration_Files_and_Directives"><header>Configuration Files and Directives</header>
+  <p>The <code>Apache HTTP Server</code> is configured via simple text files. These files may be located any of a variety of places, depending on how exactly you installed the server. Common locations for these files may be found in the httpd wiki. If you installed httpd from source, the default location of the configuration files is <code>/usr/local/apache2/conf</code>. The default configuration file is usually called httpd.conf. This, too, can vary in third-party distributions of the server.</p>
+  <p>The configuration is frequently broken into multiple smaller files, for ease of management. These files are loaded via the Include directive. The names or locations of these sub-files are not magical, and may vary greatly from one installation to another. Arrange and subdivide these files as makes the most sense to you. If the file arrangement you have by default doesn't make sense to you, feel free to rearrange it.</p>
+  </section></br>
+
+  <section class="main-section" id="Web_Site_Content"><header>Web Site Content</header>
+    <p>Web site content can take many different forms, but may be broadly divided into static and dynamic content. Static content is things like HTML files, image files, CSS files, and other files that reside in the filesystem. The DocumentRoot directive specifies where in your filesystem you should place these files. This directive is either set globally, or per virtual host. Look in your configuration file(s) to determine how this is set for your server.</p>
+    <p>Static content is things like HTML files, image files, CSS files, and other files that reside in the filesystem. The DocumentRoot directive specifies where in your filesystem you should place these files. This directive is either set globally, or per virtual host. Look in your configuration file(s) to determine how this is set for your server.</p>
+</section></br>
+
+<section class="main-section" id="Log_Files_and_Troubleshooting"><header>Log Files and Troubleshooting</header>
+  <p>As an Apache HTTP Server administrator, your most valuable assets are the log files, and, in particular, the error log. Troubleshooting any problem without the error log is like driving with your eyes closed.</p>
+  <p>The location of the error log is defined by the <code>ErrorLog</code> directive, which may be set globally, or per virtual host. Entries in the error log tell you what went wrong, and when. They often also tell you how to fix it. Each error log message contains an error code, which you can search for online for even more detailed descriptions of how to address the problem. You can also configure your error log to contain a log ID which you can then correlate to an access log entry, so that you can determine what request caused the error condition.</p>
+</section></br>
+    </main>
+  </body>
+</html>
