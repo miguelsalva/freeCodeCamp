@@ -1,0 +1,13 @@
+@media (max-height: 800px) {
+   p {
+     font-size: 14px;
+   }
+}
+
+nav {
+  position: fixed;
+}
+
+#welcome-section {
+  height: 100vh;
+}
